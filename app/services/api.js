@@ -6,12 +6,12 @@ import axios from 'axios';
 
 export default class ApiService extends Service {
   async fetchTeamData() {
-    const response = await fetch('http://localhost:3000/api/teams');
+    const response = await fetch('https://loopback3-d187efbb3356.herokuapp.com/api/teams');
     return response.json();
   }
 
   async fetchTeamMembersData(id, filterData) {
-    const response = await axios.get(`http://localhost:3000/api/teams/${id}`, {
+    const response = await axios.get(`https://loopback3-d187efbb3356.herokuapp.com/api/teams/${id}`, {
       params: {
         filter: filterData,
       },
