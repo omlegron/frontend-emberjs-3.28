@@ -1,0 +1,47 @@
+{{page-title "Test Team Members"}}
+{{!-- The following component displays Ember's default welcome message. --}}
+
+<div class="tp-testimonial-area pt-130 pb-130 p-relative">          
+   <div class="ce-testi-shape d-none d-lg-block">
+      <img src="/assets/img/hero/hero-shape-4.png" alt="">
+   </div>
+   <div class="container">
+      <div class="tp-testimonial-slider-section-four">
+         <div class="swiper-container testi-slider-active-five ">
+            <div class="swiper-wrapper">
+               {{#each model.members as |member|}}
+                  <div class="swiper-slide">
+                     <div class="tp-testimonial-item-four">
+                        <div
+                           class="tp-testimonial-item-four__meta d-flex justify-content-between align-items-center mb-60">
+                           <div class="tp-testimonial-item-four__logo">
+                              <h4 class="m-0">{{member.name}}</h4>
+                           </div>
+                           <div class="tp-testimonial-item-four__rating">
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="fas fa-star"></i></span>
+                           </div>
+                        </div>
+                        <div class="tp-testi-paragraph pb-40">
+                           <p>{{member.description}}</p>
+                        </div>
+                        <div class="tp-testimonial-item-four__client d-flex align-items-center">
+                           <div class="mr-20">
+                              <img src="/assets/img/testimonial/testi-4.2.png" alt="">
+                           </div>
+                           <div class="tp-testimonial-item-four__position">
+                              <h4 class="m-0">{{member.name}}</h4>
+                              <span>Team ID: {{member.id}}</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               {{/each}}
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
