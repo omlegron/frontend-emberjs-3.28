@@ -2,12 +2,12 @@
 {{!-- The following component displays Ember's default welcome message. --}}
 <div class="tp-testimonial-area pt-130 pb-130 p-relative">          
    <div class="ce-testi-shape d-none d-lg-block">
-      <img src="/assets/img/hero/hero-shape-4.png" alt="">
+      <img src="/assets/img/hero/hero-shape-4.png" alt="Test">
    </div>
    <div class="container">
       <div class="row">
-         {{#each model.members as |member|}}
-            <div style="background:aliceblue" class="col-xl-4 col-lg-4 col-md-6 wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".5s">
+         {{#each this.model.members as |member|}}
+            <div class="col-xl-4 col-lg-4 col-md-6 wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".5s">
                <div class="bpblog">
                   <div class="bpblog__item mb-30">
                      <div class="bpblog__content">
